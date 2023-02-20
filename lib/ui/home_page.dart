@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foods_app_api/bloc/food/food_bloc.dart';
+import 'package:foods_app_api/data/models/food_model/food_model.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,8 +15,9 @@ class HomePage extends StatelessWidget {
       body: BlocBuilder<FoodsBloc, FoodsState>(
         builder: (context, state) {
           if (state.status == Status.success) {
+            FoodData foodData = state.foodData!;
             return ListView.builder(
-              itemCount: state.foods!.length,
+              itemCount: foodData.hints.length,
               itemBuilder: (context, index) {
                 return Container(
                   margin: const EdgeInsets.all(20),
@@ -31,18 +33,18 @@ class HomePage extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          state.foods![index].text,
+                          foodData.hints[index].food.label,
                           style: const TextStyle(
-                              fontSize: 30, color: Colors.white),
+                              fontSize: 30, color: Colors.black),
                         ),
                       ),
                       Container(
                         margin: const EdgeInsets.only(left: 18, top: 15),
                         child: Text(
-                          state.foods![index].text.toString(),
+                          foodData.hints[index].food.knownAs,
                           style: const TextStyle(
                               fontSize: 14,
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w400),
                         ),
                       ),

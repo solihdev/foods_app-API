@@ -3,27 +3,27 @@ part of 'food_bloc.dart';
 class FoodsState extends Equatable {
   Status? status;
   String? error;
-  List<FoodData>? foods;
+  FoodData? foodData;
 
   FoodsState({
     this.status,
     this.error,
-    this.foods,
+    this.foodData,
   });
 
   FoodsState copyWith({
     Status? status,
     String? error,
-    List<FoodData>? foods,
+    FoodData? foodData,
   }) {
     return FoodsState(
         error: error ?? this.error,
-        foods: foods ?? this.foods,
+        foodData: foodData ?? this.foodData,
         status: status ?? this.status);
   }
 
   @override
-  List<Object?> get props => [status, error, foods];
+  List<Object?> get props => [status, error, foodData];
 }
 
 enum Status {

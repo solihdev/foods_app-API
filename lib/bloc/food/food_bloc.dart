@@ -22,7 +22,7 @@ class FoodsBloc extends Bloc<FoodsEvent, FoodsState> {
         category: event.category,
         nutritionType: event.nutritionType);
     if (myResponse.error.isEmpty) {
-      emit(state.copyWith(foods: myResponse.data, status: Status.success));
+      emit(state.copyWith(foodData: myResponse.data, status: Status.success));
     } else {
       emit(state.copyWith(error: myResponse.error, status: Status.error));
     }
