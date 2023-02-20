@@ -1,0 +1,86 @@
+{
+  "text": "",
+  "parsed": [],
+  "hints": [
+    {
+      "food": {
+        "foodId": "food_bq1kaa2anb8wmsaj3in43bxxsjyh",
+        "label": "Cheese, Camembert",
+        "knownAs": "Cheese, camembert",
+        "nutrients": {
+          "ENERC_KCAL": 300.0,
+          "PROCNT": 19.8,
+          "FAT": 24.26,
+          "CHOCDF": 0.46,
+          "FIBTG": 0.0
+        },
+        "category": "Generic foods",
+        "categoryLabel": "food",
+        "image": "https://www.edamam.com/food-img/419/419fc950e8f2a589a11d63efb28b8bef.jpg"
+      },
+      "measures": [
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+          "label": "Ounce",
+          "weight": 28.349523125
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+          "label": "Gram",
+          "weight": 1.0
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+          "label": "Whole",
+          "weight": 28.35
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+          "label": "Pound",
+          "weight": 453.59237
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_slice",
+          "label": "Slice",
+          "weight": 28.35
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+          "label": "Cup",
+          "weight": 246.0
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_wedge",
+          "label": "Wedge",
+          "weight": 38.0
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_piece",
+          "label": "Piece",
+          "weight": 28.35
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+          "label": "Serving",
+          "weight": 28.0
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+          "label": "Kilogram",
+          "weight": 1000.0
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_cubic_inch",
+          "label": "Cubic inch",
+          "weight": 17.0
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "next": {
+      "title": "Next page",
+      "href": "https://api.edamam.com/api/food-database/v2/parser?session=40&app_id=76a6ad34&app_key=2c2cb74ac900d726fda920d2c84378b7&calories=100-300"
+    }
+  }
+}
