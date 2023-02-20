@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.only(left: 18, top: 15),
                         child: Text(
-                          state.foods![index].hints.toString(),
+                          state.foods![index].text.toString(),
                           style: const TextStyle(
                               fontSize: 14,
                               color: Colors.white,
@@ -66,7 +66,11 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.download_for_offline_outlined),
         onPressed: () {
-          context.read<FoodsBloc>().add(FoodsEvent());
+          context.read<FoodsBloc>().add(FoodsEvent(
+                nutritionType: '',
+                category: '100-300',
+                health: '',
+              ));
         },
       ),
     );

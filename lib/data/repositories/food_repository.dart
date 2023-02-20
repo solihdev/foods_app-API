@@ -6,5 +6,13 @@ class FoodRepo {
 
   final ApiService apiService;
 
-  Future<MyResponse> getAllFoods() => apiService.getFoodsData();
+  Future<MyResponse> getAllFoods(
+          {String health = '',
+          String nutritionType = '',
+          String category = ''}) =>
+      apiService.getFoodsData(
+        health: health,
+        nutritionType: nutritionType,
+        category: category,
+      );
 }
