@@ -13,8 +13,8 @@ class ApiService extends ApiClient {
     try {
       Response response =
           await dio.get("${dio.options.baseUrl}/v2/parser", queryParameters: {
-        'app_id': "05d387a1",
-        'app_key': 'fce49db6c7b785162e3a3809b834f72a',
+        'app_id': "b1fd75bf",
+        'app_key': 'cfce991f98ff2b72c5676eb84faf1b49',
         'health': health == '' ? 'vegan' : health,
         'nutritionType': nutritionType == '' ? 'cooking' : nutritionType,
         'category': category == '' ? 'generic-foods' : category,

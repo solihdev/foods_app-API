@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
               child: Text(state.error.toString()),
             );
           }
-          return const SizedBox();
+          return const Center(child: Text("Birnima"));
         },
       ),
       floatingActionButton: FloatingActionButton(
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
         onPressed: () {
           context.read<FoodsBloc>().add(FoodsEvent(
                 nutritionType: '',
-                category: '100-300',
+                category: '',
                 health: '',
               ));
         },
