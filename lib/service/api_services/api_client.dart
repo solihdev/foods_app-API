@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:foods_app_api/data/api_services/custom_exceptions.dart';
+import 'package:foods_app_api/service/api_services/custom_exceptions.dart';
 
-const String baseUrl = "https://api.edamam.com/api/food-database";
+const String baseUrl = "https://api.edamam.com/api/food-database/v2/parser";
 
 class ApiClient {
   ApiClient() {

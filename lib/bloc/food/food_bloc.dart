@@ -18,9 +18,10 @@ class FoodsBloc extends Bloc<FoodsEvent, FoodsState> {
   getData(FoodsEvent event, emit) async {
     emit(state.copyWith(status: Status.loading));
     MyResponse myResponse = await foodRepo.getAllFoods(
-        health: event.health,
-        category: event.category,
-        nutritionType: event.nutritionType);
+      health: event.health,
+      category: event.category,
+      nutritionType: event.nutritionType,
+    );
     if (myResponse.error.isEmpty) {
       emit(state.copyWith(foodData: myResponse.data, status: Status.success));
     } else {
